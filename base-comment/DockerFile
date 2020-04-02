@@ -1,0 +1,10 @@
+FROM java:8
+VOLUME /tmp
+COPY target/lib/ ./lib/
+ARG JAVA_OPTS
+ENV JAVA_OPTS=$JAVA_OPTS
+ADD target/base-comment-0.0.1-SNAPSHOT.jar base-comment.jar
+EXPOSE 8001
+ENTRYPOINT exec java $JAVA_OPTS -jar base-comment.jar
+# For Spring-Boot project, use the entrypoint below to reduce Tomcat startup time.
+#ENTRYPOINT exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar demo-parent-boot.jar
