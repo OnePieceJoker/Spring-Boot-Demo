@@ -4,3 +4,5 @@ just for fun
 - Docker
 
 - Shiro
+
+- Spring boot
