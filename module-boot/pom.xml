@@ -11,6 +11,14 @@
 		<artifactId>demo-parent-boot</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.baomidou</groupId>
+    		<artifactId>mybatis-plus-boot-starter</artifactId>
+    		<version>3.2.0</version>
+		</dependency>
+	</dependencies>
 	
 
 	
