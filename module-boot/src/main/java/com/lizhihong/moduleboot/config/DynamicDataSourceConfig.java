@@ -26,7 +26,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 @EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class})
 @Configuration
-@PropertySource("classpath:config/jdbc.properties")
+@PropertySource("classpath:jdbc.properties")
 @MapperScan(basePackages = "com.lizhihong.moduleboot.mapper")
 public class DynamicDataSourceConfig {
 
